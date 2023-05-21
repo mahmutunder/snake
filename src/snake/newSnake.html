@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="Icon" href="/images/logo-top.png">
+    <style>
+
+        body{
+            background-image:url("snake.jpg") ;
+
+        }
+        #gameBoard{
+            border: 2px solid;
+           
+        }
+        #game{
+            text-align: center;
+           
+        }
+        #scoreText{
+            
+            font-size: 75px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #restarBtn{
+            border: 5px inset red;
+            color: white;
+            background: black;padding: 10px;
+            font-size: 30px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="game">
+        <canvas width="500" height="500" id="gameBoard"></canvas>
+        <h2 id="scoreText">0</h2>
+        <button id="restarBtn">Restart</button>
+
+
+    </div>
+
+
+
+    <script src="newSnake.js"></script>
+</body>
+</html>
